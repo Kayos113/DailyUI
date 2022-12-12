@@ -1,0 +1,33 @@
+html {
+  background: red;
+}
+
+header {
+  background: grey;
+}
+.header-logo {
+ max-height: 15vh;
+}
+
+nav {
+  margin: 0;
+  padding: 1rem 1rem 0.5rem 3rem;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 1rem;
+  background: lightgrey;
+  border: 1px black solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 0.2rem rgba(0.1, 0.1, 0.1, 0.4);
+  cursor: pointer;
+}
+.nav-item:first-of-type {
+  margin-left: 0;
+}
+
+.active {
+  background: white;
+}
