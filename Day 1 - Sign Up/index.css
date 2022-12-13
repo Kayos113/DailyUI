@@ -1,8 +1,16 @@
+:root {
+  --box-shadow: rgba(0.1, 0.1, 0.1, 0.4);
+  --dark-header: grey;
+  --light-header: lightgrey;
+  --body-bg: white;
+}
+
 html {
+  background: var(--body-bg);
 }
 
 header {
-  background: grey;
+  background: var(--dark-header);
 }
 .header-logo {
  max-height: 10vh;
@@ -17,12 +25,12 @@ nav {
 
 .nav-item {
   margin-left: 1rem;
-  background: lightgrey;
+  background: var(--light-header);
   border: 1px black solid;
   border-bottom: 0;
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 0.5rem;
-  box-shadow: 0.25rem -0.2rem 0.2rem rgba(0.1, 0.1, 0.1, 0.4);
+  box-shadow: 0.25rem -0.2rem 0.2rem var(--box-shadow);
   cursor: pointer;
 }
 .nav-item:first-of-type {
@@ -30,7 +38,7 @@ nav {
 }
 
 .active {
-  background: white;
+  background: var(--body-bg);
 }
 
 /*
@@ -43,12 +51,15 @@ nav {
   padding-top: 5rem;
 }
  .sign-up-form {
+   margin: 0 auto;
    display: flex;
+   width: 30%;
    flex-direction: column;
    align-items: center;
  }
 .textfield {
-  width: 30rem;
+  text-align: center;
+  width: 100%;
   font-size: 2rem;
   border-radius: 1.5rem;
   margin-top: 1rem;
