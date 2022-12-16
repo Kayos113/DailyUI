@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kayotic Tech - Checkout</title>
+    <link rel="icon" type="image/x-icon" href="../Images/kayotic-tech-logo/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../kayotic-tech.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+
+    <header>
+      <img src="../Images/kayotic-tech-logo/png/logo-no-background.png" alt="" class="header-logo">
+      <nav>
+        <div class="nav-item">
+          Home
+        </div>
+        <div class="nav-item">
+          About
+        </div>
+        <div class="nav-item">
+          Sign Up/Log In
+        </div>
+      </nav>
+    </header>
+
+    <div class="body-content">
+      <form class="cc-checkout" action="index.html" method="post">
+        <label for="card-num-input">Card Number:</label>
+        <input type="text" id="card-num-input" name="card-number" value="">
+        <label for="card-holder">Name On Card:</label>
+        <input type="text" id="card-holder" name="card-holder" value="">
+        <div class="sub-flex">
+          <div class="label-flex">
+            <div class="label-container">
+              <label for="expiration-month">Exp Month:</label>
+              <select class="expiration-month" id="expiration-month" name="expiration-month">
+                <option value="January">01 - January</option>
+                <option value="February">02 - February</option>
+                <option value="March">03 - March</option>
+                <option value="April">04 - April</option>
+                <option value="May">05 - May</option>
+                <option value="June">06 - June</option>
+                <option value="July">07 - July</option>
+                <option value="August">08 - August</option>
+                <option value="September">09 - September</option>
+                <option value="October">10 - October</option>
+                <option value="November">11 - November</option>
+                <option value="December">12 - December</option>
+              </select>
+            </div>
+          </div>
+          <div class="label-flex">
+            <div class="label-container">
+              <label for="expiration-year">Exp Year:</label>
+              <input type="text" class="short-text" id="expiration-year" name="expiration-year" value="">
+            </div>
+            </div>
+          <div class="label-flex">
+            <div class="label-container">
+              <label for="cvv">CVV:</label>
+              <input type="text" class="short-text" name="cvv" id="cvv" value="">
+            </div>
+            </div>
+        </div>
+
+        <input type="submit" name="" value="Place Order">
+
+      </form>
+    </div>
+
+  </body>
+</html>
