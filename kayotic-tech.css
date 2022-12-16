@@ -32,7 +32,7 @@ nav {
   border: 1px black solid;
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 0.5rem;
-  box-shadow: 0.25rem -0.15rem 0.3rem var(--box-shadow);
+  box-shadow: 0.25rem -0.15rem 0.15rem var(--box-shadow);
   cursor: pointer;
   z-index: 0
 }
